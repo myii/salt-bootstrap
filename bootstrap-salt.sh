@@ -3772,6 +3772,7 @@ install_debian_check_services() {
 
 install_fedora_deps() {
     if [ "$_UPGRADE_SYS" -eq $BS_TRUE ]; then
+        dnf clean expire-cache || return 1
         dnf -y update || return 1
     fi
 
@@ -4081,6 +4082,7 @@ _eof
 
 install_centos_stable_deps() {
     if [ "$_UPGRADE_SYS" -eq $BS_TRUE ]; then
+        yum clean expire-cache || return 1
         yum -y update || return 1
     fi
 
@@ -5068,6 +5070,7 @@ install_amazon_linux_ami_deps() {
 
     # Do upgrade early
     if [ "$_UPGRADE_SYS" -eq $BS_TRUE ]; then
+        yum clean expire-cache || return 1
         yum -y update || return 1
     fi
 
@@ -5303,6 +5306,7 @@ install_amazon_linux_ami_2_deps() {
 
     # Do upgrade early
     if [ "$_UPGRADE_SYS" -eq $BS_TRUE ]; then
+        yum clean expire-cache || return 1
         yum -y update || return 1
     fi
 
