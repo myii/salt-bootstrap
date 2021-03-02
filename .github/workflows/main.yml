@@ -3266,7 +3266,7 @@ jobs:
 
   py3-git-3001-opensuse-tumbleweed:
     name: Opensuse Tumbleweed v3001 Py3 Git
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-16.04
     timeout-minutes: 20
 
     # needs: lint
@@ -3312,7 +3312,7 @@ jobs:
 
   py3-git-3002-opensuse-tumbleweed:
     name: Opensuse Tumbleweed v3002 Py3 Git
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     timeout-minutes: 20
 
     # needs: lint
@@ -3358,7 +3358,7 @@ jobs:
 
   py3-git-master-opensuse-tumbleweed:
     name: Opensuse Tumbleweed Master Py3 Git
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     timeout-minutes: 20
 
     # needs: lint
@@ -3404,7 +3404,7 @@ jobs:
 
   latest-opensuse-tumbleweed:
     name: Opensuse Tumbleweed Latest packaged release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     timeout-minutes: 20
 
     # needs: lint
