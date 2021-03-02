@@ -103,6 +103,7 @@ platforms:
         - zypper --non-interactive install --auto-agree-with-licenses dbus-1
         - zypper --non-interactive install --auto-agree-with-licenses sudo openssh which curl systemd
         - systemctl enable sshd.service
+      build_options: --build-arg=security-opt='seccomp=unconfined'
     provisioner:
       salt_bootstrap_options: -MPfq -y -x python3 git %s
   - name: oraclelinux-7
