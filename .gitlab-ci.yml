@@ -56,9 +56,11 @@ variables:
 ###############################################################################
 # `test` stage: each instance below uses the `test` template above
 ###############################################################################
-py3-git-master-arch: {extends: '.test_instance'}
-py3-git-3002-arch: {extends: '.test_instance'}
 py3-git-3001-arch: {extends: '.test_instance'}
+py3-git-3002-arch: {extends: '.test_instance'}
+py3-stable-3002-arch: {extends: '.test_instance'}
+py3-git-master-arch: {extends: '.test_instance'}
+latest-arch: {extends: '.test_instance'}
 # py3-git-3001-opensuse-tumbleweed: {extends: '.test_instance'}
 # py3-git-3002-opensuse-tumbleweed: {extends: '.test_instance'}
 # py3-git-master-opensuse-tumbleweed: {extends: '.test_instance'}
