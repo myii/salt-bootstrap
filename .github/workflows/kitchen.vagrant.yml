@@ -26,8 +26,8 @@ jobs:
           # - py3-git-master-freebsd-114
           # - py3-git-master-openbsd-68
           - latest-freebsd-122
-          # - latest-freebsd-114
-          # - latest-openbsd-68
+          - latest-freebsd-114
+          - latest-openbsd-68
     steps:
       - name: 'Check out code'
         uses: 'actions/checkout@v2'
