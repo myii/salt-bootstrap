@@ -11,7 +11,11 @@ provisioner:
   # salt_install: bootstrap
   # salt_bootstrap_options: -pythonVersion 3 -version 3002.5
   salt_bootstrap_url: bootstrap-salt.ps1
+  # salt_bootstrap_url: https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/bootstrap-salt.ps1
   init_environment: ''
+  install_after_init_environment: false
+  run_salt_call: true
+  
 
 platforms:
   - name: windows-2019
@@ -23,7 +27,8 @@ suites:
       # salt_version: latest
       # salt_version: 3002.5
       # salt_bootstrap_options: -MP stable %s
-      salt_bootstrap_options: -pythonVersion 3 -version 3002.5
+      # salt_bootstrap_options: -pythonVersion 3 -version 3002.5
+      salt_bootstrap_options: -pythonVersion 3
 
 verifier:
   command: pytest --cache-clear -v -s -ra --log-cli-level=debug -k 'not test_ping' tests/integration/
