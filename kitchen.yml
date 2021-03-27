@@ -16,7 +16,7 @@ provisioner:
   salt_bootstrap_url: bootstrap-salt.sh
   salt_bootstrap_options: -MPfq git %s
   install_after_init_environment: true
-  log_level: trace
+  log_level: info
   sudo: false
   require_chef: false
   formula: tests
@@ -257,4 +257,4 @@ suites:
 verifier:
   name: shell
   remote_exec: false
-  command: pytest --cache-clear -v -s -ra --log-cli-level=debug tests/integration/
+  command: pytest --cache-clear -v -s -ra --log-cli-level=info tests/integration/
