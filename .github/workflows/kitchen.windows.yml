@@ -59,6 +59,8 @@ jobs:
         run: |
           pip install -U pip
           pip install -r tests/requirements.txt
+      - name: 'Diagnose Test Kitchen'
+        run: 'bundle exec kitchen diagnose ${{ matrix.instance }}'
       - name: 'Run Test Kitchen'
         run: 'bundle exec kitchen test ${{ matrix.instance }}'
   # test-2016:
