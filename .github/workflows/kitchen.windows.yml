@@ -15,7 +15,7 @@ jobs:
       fail-fast: false
       matrix:
         instance:
-          - latest-windows-2019
+          - latest-windows-windows-2019
     steps:
       - name: 'Check out code'
         uses: 'actions/checkout@v2'
