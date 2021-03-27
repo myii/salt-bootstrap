@@ -7,9 +7,9 @@ import pprint
 log = logging.getLogger(__name__)
 
 
-# def test_ping(host):
-#     with host.sudo():
-#         assert host.salt("test.ping", "--timeout=5")
+def test_ping(host):
+    with host.sudo():
+        assert host.salt("test.ping", "--timeout=5")
 
 
 def test_target_python_version(host, target_python_version):
