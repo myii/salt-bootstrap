@@ -41,5 +41,13 @@ jobs:
           ruby --version
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
+      - name: 'Set up Python 3.7'
+        uses: 'actions/setup-python@v1'
+        with:
+          python-version: '3.7'
+      - name: 'Install Python Dependencies'
+        run: |
+          pip install -U pip
+          pip install -r tests/requirements.txt
       - name: 'Run Test Kitchen'
         run: 'bundle exec kitchen test ${{ matrix.instance }}'
