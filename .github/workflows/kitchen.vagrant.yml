@@ -12,21 +12,21 @@ jobs:
       fail-fast: false
       matrix:
         instance:
-          - py3-git-3000-freebsd-122
-          - py3-git-3000-freebsd-114
-          - py3-git-3000-openbsd-68
-          - py3-git-3001-freebsd-122
-          - py3-git-3001-freebsd-114
-          - py3-git-3001-openbsd-68
-          - py3-git-3002-freebsd-122
-          - py3-git-3002-freebsd-114
-          - py3-git-3002-openbsd-68
-          - py3-git-master-freebsd-122
-          - py3-git-master-freebsd-114
-          - py3-git-master-openbsd-68
+          # - py3-git-3000-freebsd-122
+          # - py3-git-3000-freebsd-114
+          # - py3-git-3000-openbsd-68
+          # - py3-git-3001-freebsd-122
+          # - py3-git-3001-freebsd-114
+          # - py3-git-3001-openbsd-68
+          # - py3-git-3002-freebsd-122
+          # - py3-git-3002-freebsd-114
+          # - py3-git-3002-openbsd-68
+          # - py3-git-master-freebsd-122
+          # - py3-git-master-freebsd-114
+          # - py3-git-master-openbsd-68
           - latest-freebsd-122
-          - latest-freebsd-114
-          - latest-openbsd-68
+          # - latest-freebsd-114
+          # - latest-openbsd-68
     steps:
       - name: 'Check out code'
         uses: 'actions/checkout@v2'
