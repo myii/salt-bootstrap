@@ -16,7 +16,8 @@ provisioner:
     echo 'auto_accept: true' > /tmp/auto-accept-keys.conf
     sudo mkdir -p /usr/local/etc/salt/master.d
     sudo mv /tmp/auto-accept-keys.conf /usr/local/etc/salt/master.d/auto-accept-keys.conf
-    sh -c 't=15; echo Sleeping $t seconds; sleep $t'
+    sudo pkg install -y shuf
+    sh -c 't=$(shuf -i 1-15 -n 1); echo Sleeping $t seconds; sleep $t'
   sudo: true
 
 platforms:
@@ -36,4 +37,5 @@ platforms:
         echo 'auto_accept: true' > /tmp/auto-accept-keys.conf
         sudo mkdir -p /etc/salt/master.d
         sudo mv /tmp/auto-accept-keys.conf /etc/salt/master.d/auto-accept-keys.conf
-        sh -c 't=5; echo Sleeping $t seconds; sleep $t'
+        sudo pkg_add coreutils
+        sh -c 't=$(gshuf -i 1-15 -n 1); echo Sleeping $t seconds; sleep $t'
