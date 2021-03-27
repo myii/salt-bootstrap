@@ -129,7 +129,7 @@ suites:
       - gentoo-systemd
       - freebsd-122
       - freebsd-114
-      # - openbsd-68
+      - openbsd-68
   - name: py2-git-master
     provisioner:
       salt_version: master
@@ -140,7 +140,7 @@ suites:
       - gentoo-systemd
       - freebsd-122
       - freebsd-114
-      # - openbsd-68
+      - openbsd-68
   - name: py2-stable-3000
     provisioner:
       salt_version: 3000
