@@ -119,6 +119,34 @@ platforms:
       run_command: /lib/systemd/systemd
 
 suites:
+  - name: py3-stable-3000-windows
+    provisioner:
+      salt_version: 3000
+      salt_bootstrap_options: -pythonVersion 3 -version %s
+    includes:
+      - windows-2019
+      - windows-2016
+  - name: py3-stable-3001-0-windows
+    provisioner:
+      salt_version: 3001
+      salt_bootstrap_options: -pythonVersion 3 -version 3001.0
+    includes:
+      - windows-2019
+      - windows-2016
+  - name: py3-stable-3001-windows
+    provisioner:
+      salt_version: 3001
+      salt_bootstrap_options: -pythonVersion 3 -version %s
+    includes:
+      - windows-2019
+      - windows-2016
+  - name: py3-stable-3002-0-windows
+    provisioner:
+      salt_version: 3002
+      salt_bootstrap_options: -pythonVersion 3 -version 3002.0
+    includes:
+      - windows-2019
+      - windows-2016
   - name: py3-stable-3002-windows
     provisioner:
       salt_version: 3002
