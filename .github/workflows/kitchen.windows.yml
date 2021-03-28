@@ -20,8 +20,9 @@ jobs:
           # - py3-stable-3001-0-windows-windows-2019
           # - py3-stable-3001-windows-windows-2019
           # - py3-stable-3002-0-windows-windows-2019
-          - py3-stable-3002-windows-windows-2019
-          - latest-windows-windows-2019
+          - py3-stable-3002-6-windows-windows-2019
+          # - py3-stable-3002-windows-windows-2019
+          # - latest-windows-windows-2019
     steps:
       - name: 'Check out code'
         uses: 'actions/checkout@v2'
