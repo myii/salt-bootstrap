@@ -16,7 +16,7 @@ provisioner:
   salt_bootstrap_url: bootstrap-salt.sh
   salt_bootstrap_options: -MPfq git %s
   install_after_init_environment: true
-  log_level: info
+  log_level: trace
   sudo: false
   require_chef: false
   formula: tests
@@ -119,6 +119,17 @@ platforms:
       run_command: /lib/systemd/systemd
 
 suites:
+  - name: py3-stable-3002-windows
+    provisioner:
+      salt_bootstrap_options: -pythonVersion 3 -version 3002.5
+  - name: latest-windows
+    provisioner:
+      # salt_version: latest
+      # salt_version: 3002.5
+      # salt_bootstrap_options: -MP stable %s
+      salt_bootstrap_options: -pythonVersion 3
+      # salt_bootstrap_options: -pythonVersion 3
+
   - name: py2-git-3000
     provisioner:
       salt_version: 3000
