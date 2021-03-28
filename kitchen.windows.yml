@@ -17,13 +17,13 @@ platforms:
   - name: windows-2016
 
 suites:
-  - name: py3-stable-3001-7-windows
+  - name: py3-stable-3001
     provisioner:
       salt_version: 3001.7
-  - name: py3-stable-3002-windows
+  - name: py3-stable-3002
     provisioner:
       salt_version: 3002
-  - name: latest-windows
+  - name: latest
     provisioner:
       salt_version: latest
 

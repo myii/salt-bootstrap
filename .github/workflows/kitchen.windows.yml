@@ -16,9 +16,9 @@ jobs:
       fail-fast: false
       matrix:
         instance:
-          - py3-stable-3001-7-windows-windows-2019
-          - py3-stable-3002-windows-windows-2019
-          - latest-windows-windows-2019
+          - py3-stable-3001-windows-2019
+          - py3-stable-3002-windows-2019
+          - latest-windows-2019
     steps:
       - name: 'Check out code'
         uses: 'actions/checkout@v2'
@@ -71,9 +71,9 @@ jobs:
       fail-fast: false
       matrix:
         instance:
-          - py3-stable-3001-7-windows-windows-2016
-          - py3-stable-3002-windows-windows-2016
-          - latest-windows-windows-2016
+          - py3-stable-3001-windows-2016
+          - py3-stable-3002-windows-2016
+          - latest-windows-2016
     steps:
       - name: 'Check out code'
         uses: 'actions/checkout@v2'
