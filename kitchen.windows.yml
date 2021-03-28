@@ -9,6 +9,7 @@ driver:
 
 provisioner:
   salt_bootstrap_url: D:/a/salt-bootstrap/salt-bootstrap/bootstrap-salt.ps1
+  salt_bootstrap_options: -pythonVersion 3 -version %s
   init_environment: ''
 
 platforms:
@@ -18,22 +19,19 @@ platforms:
 suites:
   - name: py3-stable-3001-7-windows
     provisioner:
-      salt_version: 3001
-      salt_bootstrap_options: -pythonVersion 3 -version 3001.7
+      salt_version: 3001.7
     includes:
       - windows-2019
       - windows-2016
   - name: py3-stable-3002-windows
     provisioner:
       salt_version: 3002
-      salt_bootstrap_options: -pythonVersion 3 -version %s
     includes:
       - windows-2019
       - windows-2016
   - name: latest-windows
     provisioner:
       salt_version: latest
-      salt_bootstrap_options: -pythonVersion 3 -version %s
     includes:
       - windows-2019
       - windows-2016
