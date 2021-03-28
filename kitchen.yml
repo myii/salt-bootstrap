@@ -16,7 +16,7 @@ provisioner:
   salt_bootstrap_url: bootstrap-salt.sh
   salt_bootstrap_options: -MPfq git %s
   install_after_init_environment: true
-  log_level: trace
+  log_level: info
   sudo: false
   require_chef: false
   formula: tests
@@ -119,129 +119,10 @@ platforms:
       run_command: /lib/systemd/systemd
 
 suites:
-  - name: py3-stable-3000-windows
-    provisioner:
-      salt_version: 3000
-      salt_bootstrap_options: -pythonVersion 3 -version %s
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3000-9-windows
-    provisioner:
-      salt_version: 3000
-      salt_bootstrap_options: -pythonVersion 3 -version 3000.9
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3001-0-windows
-    provisioner:
-      salt_version: 3001
-      salt_bootstrap_options: -pythonVersion 3 -version 3001.0
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3001-windows
-    provisioner:
-      salt_version: 3001
-      salt_bootstrap_options: -pythonVersion 3 -version %s
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3001-1-windows
-    provisioner:
-      salt_version: 3001
-      salt_bootstrap_options: -pythonVersion 3 -version 3001.1
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3001-2-windows
-    provisioner:
-      salt_version: 3001
-      salt_bootstrap_options: -pythonVersion 3 -version 3001.2
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3001-3-windows
-    provisioner:
-      salt_version: 3001
-      salt_bootstrap_options: -pythonVersion 3 -version 3001.3
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3001-4-windows
-    provisioner:
-      salt_version: 3001
-      salt_bootstrap_options: -pythonVersion 3 -version 3001.4
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3001-5-windows
-    provisioner:
-      salt_version: 3001
-      salt_bootstrap_options: -pythonVersion 3 -version 3001.5
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3001-6-windows
-    provisioner:
-      salt_version: 3001
-      salt_bootstrap_options: -pythonVersion 3 -version 3001.6
-    includes:
-      - windows-2019
-      - windows-2016
   - name: py3-stable-3001-7-windows
     provisioner:
       salt_version: 3001
       salt_bootstrap_options: -pythonVersion 3 -version 3001.7
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3002-0-windows
-    provisioner:
-      salt_version: 3002
-      salt_bootstrap_options: -pythonVersion 3 -version 3002.0
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3002-1-windows
-    provisioner:
-      salt_version: 3002
-      salt_bootstrap_options: -pythonVersion 3 -version 3002.1
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3002-2-windows
-    provisioner:
-      salt_version: 3002
-      salt_bootstrap_options: -pythonVersion 3 -version 3002.2
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3002-3-windows
-    provisioner:
-      salt_version: 3002
-      salt_bootstrap_options: -pythonVersion 3 -version 3002.3
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3002-4-windows
-    provisioner:
-      salt_version: 3002
-      salt_bootstrap_options: -pythonVersion 3 -version 3002.4
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3002-5-windows
-    provisioner:
-      salt_version: 3002
-      salt_bootstrap_options: -pythonVersion 3 -version 3002.5
-    includes:
-      - windows-2019
-      - windows-2016
-  - name: py3-stable-3002-6-windows
-    provisioner:
-      salt_version: 3002
-      salt_bootstrap_options: -pythonVersion 3 -version 3002.6
     includes:
       - windows-2019
       - windows-2016

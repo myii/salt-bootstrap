@@ -16,24 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         instance:
-          # - py3-stable-3000-windows-windows-2019
-          # - py3-stable-3000-9-windows-windows-2019
-          # - py3-stable-3001-0-windows-windows-2019
-          # - py3-stable-3001-windows-windows-2019
-          # - py3-stable-3001-1-windows-windows-2019
-          # - py3-stable-3001-2-windows-windows-2019
-          # - py3-stable-3001-3-windows-windows-2019
-          # - py3-stable-3001-4-windows-windows-2019
-          # - py3-stable-3001-5-windows-windows-2019
-          # - py3-stable-3001-6-windows-windows-2019
           - py3-stable-3001-7-windows-windows-2019
-          # - py3-stable-3002-0-windows-windows-2019
-          # - py3-stable-3002-1-windows-windows-2019
-          # - py3-stable-3002-2-windows-windows-2019
-          # - py3-stable-3002-3-windows-windows-2019
-          # - py3-stable-3002-4-windows-windows-2019
-          # - py3-stable-3002-5-windows-windows-2019
-          # - py3-stable-3002-6-windows-windows-2019
           - py3-stable-3002-windows-windows-2019
           - latest-windows-windows-2019
     steps:
@@ -90,24 +73,7 @@ jobs:
       fail-fast: false
       matrix:
         instance:
-          # - py3-stable-3000-windows-windows-2016
-          # - py3-stable-3000-9-windows-windows-2016
-          # - py3-stable-3001-0-windows-windows-2016
-          # - py3-stable-3001-windows-windows-2016
-          # - py3-stable-3001-1-windows-windows-2016
-          # - py3-stable-3001-2-windows-windows-2016
-          # - py3-stable-3001-3-windows-windows-2016
-          # - py3-stable-3001-4-windows-windows-2016
-          # - py3-stable-3001-5-windows-windows-2016
-          # - py3-stable-3001-6-windows-windows-2016
           - py3-stable-3001-7-windows-windows-2016
-          # - py3-stable-3002-0-windows-windows-2016
-          # - py3-stable-3002-1-windows-windows-2016
-          # - py3-stable-3002-2-windows-windows-2016
-          # - py3-stable-3002-3-windows-windows-2016
-          # - py3-stable-3002-4-windows-windows-2016
-          # - py3-stable-3002-5-windows-windows-2016
-          # - py3-stable-3002-6-windows-windows-2016
           - py3-stable-3002-windows-windows-2016
           - latest-windows-windows-2016
     steps:

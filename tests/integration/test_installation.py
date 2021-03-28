@@ -8,7 +8,6 @@ from contextlib import nullcontext
 
 log = logging.getLogger(__name__)
 
-# https://stackoverflow.com/questions/27803059/conditional-with-statement-in-python
 if "windows" in os.environ.get("KITCHEN_INSTANCE"):
     cm = nullcontext()
 else:
