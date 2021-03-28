@@ -126,6 +126,13 @@ suites:
     includes:
       - windows-2019
       - windows-2016
+  - name: py3-stable-3000-9-windows
+    provisioner:
+      salt_version: 3000
+      salt_bootstrap_options: -pythonVersion 3 -version 3000.9
+    includes:
+      - windows-2019
+      - windows-2016
   - name: py3-stable-3001-0-windows
     provisioner:
       salt_version: 3001
@@ -137,6 +144,13 @@ suites:
     provisioner:
       salt_version: 3001
       salt_bootstrap_options: -pythonVersion 3 -version %s
+    includes:
+      - windows-2019
+      - windows-2016
+  - name: py3-stable-3001-7-windows
+    provisioner:
+      salt_version: 3001
+      salt_bootstrap_options: -pythonVersion 3 -version 3001.7
     includes:
       - windows-2019
       - windows-2016
