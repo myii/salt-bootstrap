@@ -23,6 +23,6 @@ platforms:
   # - name: windows-2016
 
 verifier:
-  command: pytest --cache-clear -v -s -ra --log-cli-level=debug tests\integration\
+  command: pytest --cache-clear -v -s -ra --log-cli-level=debug -k 'not test_ping' tests\integration\
   # command: pytest --cache-clear -v -s -ra --log-cli-level=debug -k 'not test_ping' tests\integration\
   # command: pytest --cache-clear -v -s -ra --log-cli-level=debug -k 'not test_ping' D:\a\salt-bootstrap\salt-bootstrap\tests\integration\
