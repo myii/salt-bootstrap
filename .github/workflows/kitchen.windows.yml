@@ -20,7 +20,12 @@ jobs:
           # - py3-stable-3001-0-windows-windows-2019
           # - py3-stable-3001-windows-windows-2019
           # - py3-stable-3002-0-windows-windows-2019
-          - py3-stable-3002-6-windows-windows-2019
+          - py3-stable-3002-1-windows-windows-2019
+          - py3-stable-3002-2-windows-windows-2019
+          - py3-stable-3002-3-windows-windows-2019
+          - py3-stable-3002-4-windows-windows-2019
+          - py3-stable-3002-5-windows-windows-2019
+          # - py3-stable-3002-6-windows-windows-2019
           # - py3-stable-3002-windows-windows-2019
           # - latest-windows-windows-2019
     steps:
