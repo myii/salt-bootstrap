@@ -121,14 +121,12 @@ platforms:
 suites:
   - name: py3-stable-3002-windows
     provisioner:
+      salt_version: 3002
       salt_bootstrap_options: -pythonVersion 3 -version 3002.5
   - name: latest-windows
     provisioner:
-      # salt_version: latest
-      # salt_version: 3002.5
-      # salt_bootstrap_options: -MP stable %s
+      salt_version: latest
       salt_bootstrap_options: -pythonVersion 3
-      # salt_bootstrap_options: -pythonVersion 3
 
   - name: py2-git-3000
     provisioner:
