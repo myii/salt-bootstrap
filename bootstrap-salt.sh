@@ -145,7 +145,7 @@ __check_pip_allowed() {
 #----------------------------------------------------------------------------------------------------------------------
 __check_config_dir() {
     CC_DIR_NAME="$1"
-    CC_DIR_BASE=$(basename "${CC_DIR_NAME}")
+    CC_DIR_BASE=$(basename ${CC_DIR_NAME})
 
     case "$CC_DIR_NAME" in
         http://*|https://*)
